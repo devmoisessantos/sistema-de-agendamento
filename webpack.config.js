@@ -1,6 +1,7 @@
 const { stat } = require('fs');
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
     target: 'web',
@@ -16,7 +17,7 @@ module.exports = {
         static: {
             directory: path.resolve(__dirname, 'dist'),
         },
-        port: 9000,
+        port: 1111,
         open: true,
         liveReload: true,
     },
@@ -26,14 +27,15 @@ module.exports = {
             template: path.resolve(__dirname, 'index.html'),
             favicon: path.resolve('src', 'assets', 'scissors.svg'),
         }),
-    ],
-
+        new MiniCssExtractPlugin()
+    ], 
+    
     module: {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
-        ]
-    }
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+        ],
+    },
 }
