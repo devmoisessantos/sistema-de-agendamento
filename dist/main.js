@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/global.css */ \"./src/css/global.css\");\n/* harmony import */ var _css_form_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/form.css */ \"./src/css/form.css\");\n/* harmony import */ var _css_schedule_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/schedule.css */ \"./src/css/schedule.css\");\n\n\n// CSS\n\n\n\n\n//# sourceURL=webpack://hair-day/./src/js/main.js?");
+
+/***/ }),
+
 /***/ "./src/css/form.css":
 /*!**************************!*\
   !*** ./src/css/form.css ***!
@@ -37,16 +47,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://hair-day/./src/css/schedule.css?");
-
-/***/ }),
-
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/global.css */ \"./src/css/global.css\");\n/* harmony import */ var _css_form_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/form.css */ \"./src/css/form.css\");\n/* harmony import */ var _css_schedule_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/schedule.css */ \"./src/css/schedule.css\");\n\r\n\r\n// CSS\r\n;\r\n\r\n\n\n//# sourceURL=webpack://hair-day/./src/js/main.js?");
 
 /***/ })
 
