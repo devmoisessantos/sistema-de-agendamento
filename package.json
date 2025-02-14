@@ -1,0 +1,20 @@
+{
+  "name": "hair-day",
+  "description": "Essa é uma aplicação Web de agendamento de corte de cabelo para administração da empresa Hair Day.",
+  "author": {
+    "name": "Moises M. Santos",
+    "url": "https://github.com/devmoisessantos"
+  },
+  "scripts": {
+    "api": "json-server -w server.json --port 3333",
+    "dev": "webpack",
+    "server": "webpack serve"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.3",
+    "json-server": "^1.0.0-beta.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
