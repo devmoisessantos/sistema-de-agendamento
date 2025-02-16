@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { openingHours } from "../../utils/opening-hours.js";
+import { hoursClick } from "./hours-click.js";
 
 const hours = document.getElementById("hours");
 
@@ -49,6 +50,8 @@ export function loadHours({ date }) {
 
     // Adiciona tudo ao DOM de uma vez
     hours.appendChild(fragment);
+
+    hoursClick()
 }
 
 // Função para criar os cabeçalhos de períodos (Manhã, Tarde, Noite)
