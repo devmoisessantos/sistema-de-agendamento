@@ -4,6 +4,8 @@ import { openingHours } from "../../utils/opening-hours.js";
 const hours = document.getElementById("hours");
 
 export function loadHours({ date }) {
+    hours.textContent = ""
+
     const opening = openingHours.map((hour) => {
         // Retorna somente a hora
         const [scheduleHour] = hour.split(":");
