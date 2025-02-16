@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import { scheduleNew } from "../../services/new-schedule.js"
 
 const form = document.querySelector('form')
 const clientName = document.getElementById('client')
@@ -10,7 +11,7 @@ selectedDate.value = currentDate
 selectedDate.min = currentDate
 
 
-form.onsubmit = (event) => {
+form.onsubmit = async (event) => {
     event.preventDefault()
 
     try {
@@ -26,9 +27,14 @@ form.onsubmit = (event) => {
             return alert('O horário precisa ser selecionado')
         }
 
-        const [hour] = hourSelected.value.split(':')
+        const [hour] = hourSelected.textContent.split(':')
         const when = dayjs(selectedDate.value).add(hour, 'hour')
         const id = new Date().getTime()
+
+        console.log('Dados antes de enviar:', { id, name, when })
+
+        await scheduleNew({ id, name, when })
+
     } catch (error) {
         alert('Ocorreu um erro ao criar o agendamento', error)
         console.log(error)

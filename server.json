@@ -1,7 +1,9 @@
 {
-    "schedules": [
-        {
-            
-        }
-    ]
+  "schedules": [
+    {
+      "id": 1739732973626,
+      "name": "Moises Santos",
+      "when": "2025-02-19T18:00:00.000Z"
+    }
+  ]
 }
