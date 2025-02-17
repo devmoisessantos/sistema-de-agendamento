@@ -89,7 +89,7 @@ sistema-de-agendamento/
 
 ## 🌎 Deploy
 
-O projeto está disponível online: **[AQUI](https://sistema-de-agendamento.vercel.app/)**
+O projeto está disponível online: **[AQUI](https://sistema-de-agendamento-phi.vercel.app/)**
 
 ---
 
