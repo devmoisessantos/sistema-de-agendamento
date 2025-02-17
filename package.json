@@ -6,10 +6,10 @@
     "url": "https://github.com/devmoisessantos"
   },
   "scripts": {
-    "api": "json-server -w server.json --port 3333",
-    "dev": "webpack",
-    "server": "webpack serve"
-  },
+  "build": "webpack --mode production",
+  "dev": "webpack serve",
+  "server": "json-server -w server.json --port 3333"
+},
   "devDependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/core": "^7.26.9",
